@@ -14,6 +14,10 @@ permissions:
   pages: write
   id-token: write
 
+env:
+  VITE_TELEGRAM_BOT_TOKEN: ${{ secrets.VITE_TELEGRAM_BOT_TOKEN }}
+  VITE_TELEGRAM_CHAT_ID: ${{ secrets.VITE_TELEGRAM_CHAT_ID }}
+
 # Allow one concurrent deployment
 concurrency:
   group: 'pages'
