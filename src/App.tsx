@@ -7,7 +7,7 @@ import Navbar from './components/Layout/Navbar';
 import Footer from './components/Layout/Footer';
 import { CartProvider } from './context/CartContext';
 export function App() {
-  return <Router>
+  return <Router basename={import.meta.env.BASE_URL}>
       <CartProvider>
         <div className="flex flex-col min-h-screen bg-gray-50">
           <Navbar />
