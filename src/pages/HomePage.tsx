@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HeartIcon, GiftIcon, HomeIcon, ArrowRightIcon, SparklesIcon } from 'lucide-react';
-import hands from '../assets/hands.png';
+// import hands from '../assets/hands.png';
+import sea from '../assets/sea.png';
 import qrPayment from '../assets/qr_payment.jpg';
 const HomePage: React.FC = () => {
   return <div className="w-full">
       {/* Hero Section */}
       <section className="relative min-h-[70vh] bg-cover bg-center flex items-center justify-center" style={{
-      backgroundImage: `url("${hands}")`
+      backgroundImage: `url("${sea}")`
     }}>
         <div className="hero-overlay"></div>
         <div className="relative z-10 text-center text-white px-6 max-w-3xl mx-auto">
