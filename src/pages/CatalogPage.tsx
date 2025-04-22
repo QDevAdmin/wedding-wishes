@@ -4,6 +4,7 @@ import { products, categories } from '../data/products';
 import ProductCard from '../components/Catalog/ProductCard';
 import { useCart } from '../context/CartContext';
 import { v4 as uuidv4 } from 'uuid';
+import gift from '../assets/gift.png';
 
 const showNotification = (message: string, type: 'success' | 'error' = 'success') => {
   const notification = document.createElement('div');
@@ -110,7 +111,7 @@ const CatalogPage: React.FC = () => {
       <div className="bg-gradient-to-r from-indigo-50 to-violet-50 rounded-2xl overflow-hidden mb-16">
         <div className="md:grid md:grid-cols-5">
           <div className="col-span-2 bg-cover bg-center hidden md:block" style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1513885535751-8b9238bd345a?q=80&w=800&auto=format&fit=crop')"
+          backgroundImage: `url("${gift}")`
         }}></div>
           <div className="col-span-3 p-8 md:p-10">
             <h2 className="text-2xl font-light mb-6 text-neutral-800">

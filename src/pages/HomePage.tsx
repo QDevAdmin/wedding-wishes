@@ -2,13 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HeartIcon, GiftIcon, HomeIcon, ArrowRightIcon, SparklesIcon } from 'lucide-react';
 // import hands from '../assets/hands.png';
-import sea from '../assets/sea.png';
+// import sea from '../assets/sea.png';
+import top from '../assets/top.png'
 import qrPayment from '../assets/qr_payment.jpg';
+import bouquet from '../assets/bouquet.png';
+
 const HomePage: React.FC = () => {
   return <div className="w-full">
       {/* Hero Section */}
       <section className="relative min-h-[70vh] bg-cover bg-center flex items-center justify-center" style={{
-      backgroundImage: `url("${sea}")`
+      backgroundImage: `url("${top}")`
     }}>
         <div className="hero-overlay"></div>
         <div className="relative z-10 text-center text-white px-6 max-w-3xl mx-auto">
@@ -99,7 +102,7 @@ const HomePage: React.FC = () => {
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <div className="grid md:grid-cols-2">
                 <div className="h-64 md:h-auto">
-                  <img src="https://images.unsplash.com/photo-1591886960571-74d43a9d4166?q=80&w=800&auto=format&fit=crop" alt="Букет цветов" className="w-full h-full object-cover" />
+                  <img src={bouquet} alt="Букет цветов" className="w-full h-full object-cover" />
                 </div>
                 <div className="p-8 md:p-10 flex items-center">
                   <div>
